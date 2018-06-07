@@ -1,3 +1,3 @@
 # Syracuse_CPS500
-# Python 3.6
-# Two homeworks: Implementing Hangman game and Yahtzee game.
+### Language: Python 3.6
+Three assignments: Implementing Hangman game and Yahtzee game.
