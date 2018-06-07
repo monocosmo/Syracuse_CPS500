@@ -1,6 +1,3 @@
-#  CPS 300 (Python Programming): HW 5
-#  Shuchi Wu
-#  
 #  This file contains the beginning of a program to simulate turns 
 #  in the dice game Yahtzee.
 
@@ -67,9 +64,6 @@ def rollAllDice (dice):
             reroll(dice)
             print("\nYour roll: ")
 
-#############################################################################
-#  Function definitions from Lab 14
-
 # Part 1: rollOneDie
 
 def rollOneDie ():
@@ -96,9 +90,6 @@ def displayPoints (str,pts):
 
 def upperSection (val,freq):
     return freq[val]*val
-
-#############################################################################
-# Functions for Homework 5
 
 # Function 1: Returns the number of points that freq allows for three of a kind 
 #   (i.e., either 0 or the total of the dice).
@@ -256,7 +247,7 @@ def maxCategories (freq):
            print (nameList[index])
 
 #############################################################################
-#  main -- the heart of the program 
+#  main
 #
 #  There are two arrays here:
 #
@@ -311,85 +302,3 @@ def main ():
     displayPoints ("Yahtzee", yahtzee(freq))
     print ("Maximum points possible: ",maximizePoints(freq))
     maxCategories (freq)
-
-##############################################################################
-##                              Shell Interaction
-##
-##>>> main()
-##
-##Your roll: 
-##1 6 6 4 5 
-##
-##Do you want to re-roll? (Y/N) y
-##Keeping die #0 (value: 1)? (Y/N) n
-##Keeping die #1 (value: 6)? (Y/N) y
-##Keeping die #2 (value: 6)? (Y/N) y
-##Keeping die #3 (value: 4)? (Y/N) y
-##Keeping die #4 (value: 5)? (Y/N) y
-##
-##Your roll: 
-##3 6 6 4 5 
-##
-##Do you want to re-roll? (Y/N) n
-##3 6 6 4 5 
-##
-##Points for Aces/Ones: 0
-##Points for Deuces/Twos: 0
-##Points for Threes: 3
-##Points for Fours: 4
-##Points for Fives: 5
-##Points for Sixes: 12
-##Points for Three of a Kind: 0
-##Points for Four of a Kind: 0
-##Points for Full House: 0
-##Points for Small Straight: 30
-##Points for Large Straight: 0
-##Points for Chance: 24
-##Points for Yahtzee: 0
-##Maximum points possible:  30
-##Maximum points can be received from these categories:
-##Small straight
-##>>> main()
-##
-##Your roll: 
-##1 3 5 5 6 
-##
-##Do you want to re-roll? (Y/N) y
-##Keeping die #0 (value: 1)? (Y/N) n
-##Keeping die #1 (value: 3)? (Y/N) 
-##Keeping die #2 (value: 5)? (Y/N) y
-##Keeping die #3 (value: 5)? (Y/N) y
-##Keeping die #4 (value: 6)? (Y/N) y
-##
-##Your roll: 
-##5 5 5 5 6 
-##
-##Do you want to re-roll? (Y/N) y
-##Keeping die #0 (value: 5)? (Y/N) y
-##Keeping die #1 (value: 5)? (Y/N) y
-##Keeping die #2 (value: 5)? (Y/N) y
-##Keeping die #3 (value: 5)? (Y/N) y
-##Keeping die #4 (value: 6)? (Y/N) no
-##
-##Your roll: 
-##5 5 5 5 6 
-##
-##Points for Aces/Ones: 0
-##Points for Deuces/Twos: 0
-##Points for Threes: 0
-##Points for Fours: 0
-##Points for Fives: 20
-##Points for Sixes: 6
-##Points for Three of a Kind: 26
-##Points for Four of a Kind: 26
-##Points for Full House: 0
-##Points for Small Straight: 0
-##Points for Large Straight: 0
-##Points for Chance: 26
-##Points for Yahtzee: 0
-##Maximum points possible:  26
-##Maximum points can be received from these categories:
-##Three of a kind
-##Four of a kind
-##Chance
-##>>> 
